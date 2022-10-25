@@ -8,11 +8,18 @@ html {
     font-size: 20px;
     line-height: 125%;
   }
+  li{
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 125%;
+    margin-left: 20px;
+  }
   h1 {
     color: rgb(0, 0, 0);
     font-family: Noto Sans, sans-serif;
     font-size: 45px;
-    text-align: center;
+
   }
   h2 {
     color: rgb(0, 0, 0);
@@ -26,15 +33,20 @@ html {
     margin: 8px;
 }
 
-    .about {
+    .aboutme{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 100px;
+        margin-top: 0px;
         margin-left: 70px;
         margin-right: 100px;
-        margin-bottom: 100px;
+        margin-bottom: 0px;
         gap: 30px;
+        }
+        
+        .block1 {
+          align-items: center;
+          justify-content: space-between;
         }
 .why {
         display: flex;
@@ -76,19 +88,59 @@ img {
 }
 
 .menu {
-    color: rgb(0, 0, 0);
-    font-family: Noto Sans, sans-serif;
-    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    background-color: black;
+    padding: 0px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 100px;
-    margin-bottom: 20px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
 
 }
-.icons {
-    display:inline-block;
-    margin-left: 550px;
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 4px 8px;
+  margin: 0px 4px;
+  border: 0px solid transparent;
+  border-radius: 16px;
+  background-color: transparent;
+}
 
+.menu a.active{
+  background-color: rgb(72, 39, 24);
+}
+
+.menu a:hover {
+  background-color: rgb(72, 39, 24);
+}
+.header {
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 32px;
+}
+.logo {
+  color: white;
+  font-size: 25px;
+  font-family: Noto Sans, sans-serif;
+  margin-left: 50px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.section {
+  min-height: 100vh;
+  padding-top: 64px;
 }
