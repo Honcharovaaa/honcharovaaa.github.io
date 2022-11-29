@@ -13,7 +13,6 @@ html {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     line-height: 125%;
-    margin-left: 20px;
   }
   h1 {
     color: rgb(0, 0, 0);
@@ -31,7 +30,7 @@ html {
   }
   body {
     display: block;
-    margin: 8px;
+    margin: 0px;
 }
 
     .aboutme{
@@ -53,7 +52,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-top: 100px;
+        margin-top: 0px;
         margin-left: 70px;
         margin-right: 100px;
         margin-bottom: 100px;
@@ -62,30 +61,44 @@ html {
     
 img {
         border-radius: 20px;
+        max-width: 100%;
+        height: auto;
       }
+.imgaboutme{
+max-width: 40vh;
+}
+.imghistory{
+  min-width: 30vh;
+  max-width: 100vh;
+}
+.imghistory2{
+  min-width: 30vh;
+  max-width: 100vh;
+}
+.imgportfolio{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: stretch;
+  justify-items: center;
+}
 
-.portfolio {
-    display: flex;
-    align-items: center;
-    margin-top: 70px;
-    margin-left: 70px;
-    margin-right: 100px;
-    gap: 30px;
+.portfolio{
+  display:block;
+  align-items: center;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  gap: 20px;
+  margin-bottom: 100px;
 }
-.portfolio2 {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 70px;
-    margin-right: 100px;
-    margin-bottom: 100px;
-    gap: 30px;
-}
+
 .extra-p {
-    color: rgb(0, 0, 0);
+    color: white;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
-    text-align: center
+    text-align: center;
+    
 }
 
 .menu {
@@ -134,7 +147,9 @@ img {
   color: white;
   font-size: 25px;
   font-family: 'Nunito Sans', sans-serif;
-  margin-left: 50px;
+  margin-left: 70px;
+  background-color: transparent;
+  text-decoration: none;
 }
 .icons {
   display: flex;
@@ -144,4 +159,27 @@ img {
 .section {
   min-height: 100vh;
   padding-top: 64px;
+
 }
+
+.sectionportfolio{
+  min-height: 100vh;
+  padding-top: 64px;
+
+}
+
+.section.first {
+  padding-top: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+background-color: none;
+}
+.content{
+  justify-content: center;
+}
+
