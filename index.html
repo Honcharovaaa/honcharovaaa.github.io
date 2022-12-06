@@ -5,6 +5,7 @@
     <title>Website: Honcharova Karina</title>
     <meta name="description" content="Привіт! Я фотографиня з досвідом роботи 4 роки та початковий контент-мейкер.">
     <meta property="og:image" content="https://honcharovaaa.github.io/me2.JPG">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
     <link rel="stylesheet" href="css\style.css" />
     <link rel="stylesheet" href="css//mobile.css" />
   </head>
@@ -60,20 +61,73 @@
   </div></div>
   <div class="sectionportfolio" id="portfolio">
     <h2> Моє портфоліо:</h2>
-    <div class="portfolio">
-   <div class="imgportfolio"> <img src="1.jpg"/>
-    <img src="2.jpg"/>
-    <img src="3.jpg"/>
-    <img src="4.jpg"/>
-    <img src="5.jpg"/>
-    <img src="6.jpg"/>
-    <img src="7.jpg"/>
-    <img src="8.jpg"/>
-    <img src="9.jpg"/>
-    <img src="10.jpg"/>
-    <img src="11.jpg"/>
-    <img src="12.jpg"/> </div>
-  </div>  </div>
+    <div class="section third "  id="portfolio" > 
+      <div class="gallery" id="lightgallery" > 
+    
+        <div class="gallery-item">
+          <a href="img/1.jpg" target="_blank">
+          <img src="img/1.jpg" /></a>
+        </div>
+      
+        <div class="gallery-item">
+          <a href="img/2.jpg" target="_blank">
+          <img src="img/2.jpg" /></a>
+        </div>
+    
+        <div class="gallery-item">
+          <a href="img/3.jpg" target="_blank">
+          <img src="img/3.jpg" /></a>
+        </div>
+    
+        <div class="gallery-item">
+          <a href="img/4.jpg" target="_blank">
+          <img src="img/4.jpg" /></a>
+        </div>
+    
+        <div class="gallery-item">
+          <a href="img/5.jpg" target="_blank">
+          <img src="img/5.jpg" /></a>
+        </div>
+    
+    
+        <div class="gallery-item">
+          <a href="img/6.jpg" target="_blank">
+          <img src="img/6.jpg" /></a>
+        </div>
+        <div class="gallery-item">
+          <a href="img/7.jpg" target="_blank">
+          <img src="img/7.jpg" /></a>
+        </div>
+      
+        <div class="gallery-item">
+          <a href="img/8.jpg" target="_blank">
+          <img src="img/8.jpg" /></a>
+        </div>
+    
+        <div class="gallery-item">
+          <a href="img/9.jpg" target="_blank">
+          <img src="img/9.jpg" /></a>
+        </div>
+    
+        <div class="gallery-item">
+          <a href="img/10.jpg" target="_blank">
+          <img src="img/10.jpg" /></a>
+        </div>
+    
+        <div class="gallery-item">
+          <a href="img/11.jpg" target="_blank">
+          <img src="img/11.jpg" /></a>
+        </div>
+    
+    
+        <div class="gallery-item">
+          <a href="img/12.jpg" target="_blank">
+          <img src="img/12.jpg" /></a>
+        </div>
+    
+        </div>
+      </div>
+    </div>
 
     <div class="content">
       <h2 id="contacts"> Контакти:</h2>
@@ -86,5 +140,15 @@
     </a>
   </div>
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
+
+<script type="text/javascript">
+  lightGallery(document.getElementById("lightgallery"),
+  {
+    selector: ".gallery-item a"
+  }
+  );
+</script>
 </body>
 </html>
