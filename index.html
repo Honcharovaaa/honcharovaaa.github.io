@@ -6,24 +6,24 @@
     <meta name="description" content="Привіт! Я фотографиня з досвідом роботи 4 роки та початковий контент-мейкер.">
     <meta property="og:image" content="https://honcharovaaa.github.io/me2.JPG">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
-    <link rel="stylesheet" href="css\style.css" />
-    <link rel="stylesheet" href="css//mobile.css" />
-  </head>
+
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+
+
+</head>
   <body>
     <div class="header"> 
     <div class="navbar">
       <div class ="logo" class="extra-p"><a href="#top"> HONCHAROVA.PH </div>
     <ul class="menu">
-      <a href="#top">Про мене</a>
-
-        <a href="#history">Чому саме фотографія?</a>
-
-
-        <a href="#portfolio">Моє портфоліо</a>
-
-
-        <a href="#contacts" class="active">Мої контакти</a>
-
+ <li><a href="#top">Про мене</a></li>
+<li><a href="#history">Чому саме фотографія?</a></li>
+<li><a href="#portfolio">Моє портфоліо</a></li>
+      <li><a href="#contacts" class="active">Мої контакти</a></li>
     </ul>
     </div>
     </div>
@@ -42,6 +42,24 @@
     </ul>
     </p>
   </div></div>
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
   <div class="section" id="history">
     <h2> Чому саме фотографія?</h2>
     <div class="why">
@@ -150,5 +168,33 @@
   }
   );
 </script>
+<script src="https://cdn.jsdelivr.net/npm/menuspy@latest/dist/menuspy.min.js"></script>
+<script>
+    var elm = document.querySelector('.navbar .menu');
+    var ms = new MenuSpy(elm);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+  loop: true,
+  navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true
+        },
+       // effect: "fade",
+
+spaceBetween: 30,
+
+pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+});
+  </script>
 </body>
 </html>
