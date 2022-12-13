@@ -5,8 +5,11 @@
     <title>Website: Honcharova Karina</title>
     <meta name="description" content="Привіт! Я фотографиня з досвідом роботи 4 роки та початковий контент-мейкер.">
     <meta property="og:image" content="https://honcharovaaa.github.io/me2.JPG">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css" />
-
     <link
   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
@@ -19,12 +22,21 @@
     <div class="header"> 
     <div class="navbar">
       <div class ="logo" class="extra-p"><a href="#top"> HONCHAROVA.PH </div>
-    <ul class="menu">
- <li><a href="#top">Про мене</a></li>
-<li><a href="#history">Чому саме фотографія?</a></li>
-<li><a href="#portfolio">Моє портфоліо</a></li>
-      <li><a href="#contacts" class="active">Мої контакти</a></li>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Меню
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#top">Про мене</a>
+          <a class="dropdown-item" href="#history">Історія</a>
+          <a class="dropdown-item" href="#portfolio">Портфоліо</a>
+          <a class="dropdown-item" href="#contacts">Контакти</a>
+        </div>
+      </li>
     </ul>
+
+  
     </div>
     </div>
     <div class="aboutme">

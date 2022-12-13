@@ -16,6 +16,10 @@
      .imgaboutme{
         max-width: 40vh;
         }
+
+        .content{
+         margin-top: 9%;
+        }
         
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -62,6 +66,9 @@
             flex-basis: 22.5%;
             
           }
+          .content{
+            margin-top: 9%;
+           }
 
 }
 
@@ -148,6 +155,9 @@
    .gallery-item {
       flex-basis: 30%;
     }
+    .content{
+      margin-top: 9%;
+     }
 }
 @media screen and (max-width: 575px){
    .navbar {
@@ -234,4 +244,7 @@
       .gallery-item {
          flex-basis: 47%;
        }
+       .content{
+         margin-top: 9%;
+        }
 }

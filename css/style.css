@@ -26,7 +26,9 @@ html {
   margin-left: 70px;
   background-color: transparent;
   text-decoration: none;
+  background-color: none;
 }
+
 .menu {
   font-family: "Nunito Sans", sans-serif;
   list-style: none;
@@ -49,24 +51,45 @@ html {
   transition: all 0.5s ease;
 }
 
-.menu a.active {
-  background-color: rgb(72, 39, 24);
-}
-
-.menu .active a {
-  background-color: rgb(72, 39, 24);
-}
-
-.menu a:hover {
-  background-color: rgb(72, 39, 24);
-} 
-
 a {
   text-decoration: none;
   color: white;
 }
 a:hover {
-  background-color: none;
+  color: rgb(174, 174, 174);
+  text-decoration: none;
+}
+
+/* dropdown*/
+.dropdown-item{
+  color: rgb(255, 255, 255);
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  padding-right: 0px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #000000;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.15);
+  border-radius: 0.25rem;}
+.dropdown-menu.show{
+background-color: black;
+padding: 0px;
+}
+.dropdown, .dropleft, .dropright, .dropup {
+  position: relative;
+  display: flex;
 }
 
  /* body */
@@ -86,6 +109,7 @@ h2 {
   color: rgb(0, 0, 0);
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
+  font-weight: 600;
   line-height: 125%;
   text-align: center;
 }
@@ -198,6 +222,7 @@ img {
   font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   text-align: center;
+  background-color: black;
 }
 
 .sectionportfolio {
@@ -242,4 +267,5 @@ img {
 
 .content {
   justify-content: center;
+    margin-top: 5%;
 }
