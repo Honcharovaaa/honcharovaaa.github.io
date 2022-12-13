@@ -2,86 +2,31 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
-  color: rgb(0, 0, 0);
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  line-height: 125%;
-}
-li {
-  color: rgb(0, 0, 0);
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  line-height: 125%;
-}
-h1 {
-  color: rgb(0, 0, 0);
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 45px;
-  font-weight: 700;
-}
-h2 {
-  color: rgb(0, 0, 0);
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
-  line-height: 125%;
-  text-align: center;
-}
-body {
-  display: block;
-  margin: 0px;
+
+/* header */
+
+.header {
+  position: sticky;
+  top: 0px;
 }
 
-.aboutme {
+.navbar {
+  background-color: black;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  margin-top: 0px;
-  margin-left: 70px;
-  margin-right: 100px;
-  margin-bottom: 0px;
-  gap: 30px;
+  align-items: center;
+  padding: 4px 32px;
 }
 
-.block1 {
-  align-items: center;
-  justify-content: space-between;
-}
-.why {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0px;
-  margin-left: 70px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  gap: 30px;
-}
-
-img {
-  border-radius: 20px;
-  max-width: 100%;
-  height: auto;
-}
-.imgaboutme {
-  max-width: 40vh;
-}
-.imghistory {
-  min-width: 30vh;
-  max-width: 100vh;
-}
-.imghistory2 {
-  min-width: 30vh;
-  max-width: 100vh;
-}
-
-.extra-p {
+.logo {
   color: white;
+  font-size: 25px;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 20px;
-  text-align: center;
+  margin-left: 70px;
+  background-color: transparent;
+  text-decoration: none;
 }
-
 .menu {
   font-family: "Nunito Sans", sans-serif;
   list-style: none;
@@ -114,36 +59,133 @@ img {
 
 .menu a:hover {
   background-color: rgb(72, 39, 24);
+} 
+
+a {
+  text-decoration: none;
+  color: white;
 }
-.header {
-  position: sticky;
-  top: 0px;
+a:hover {
+  background-color: none;
 }
 
-.navbar {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4px 32px;
+ /* body */
+
+ body {
+  display: block;
+  margin: 0px;
 }
-.logo {
-  color: white;
-  font-size: 25px;
+
+h1 {
+  color: rgb(0, 0, 0);
   font-family: "Nunito Sans", sans-serif;
-  margin-left: 70px;
-  background-color: transparent;
-  text-decoration: none;
+  font-size: 45px;
+  font-weight: 700;
 }
-.icons {
+h2 {
+  color: rgb(0, 0, 0);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  line-height: 125%;
+  text-align: center;
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  line-height: 125%;
+}
+
+li {
+  color: rgb(0, 0, 0);
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  line-height: 125%;
+}
+
+/* about me*/
+
+.aboutme {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 70px;
+  margin-right: 100px;
+  margin-bottom: 0px;
+  gap: 30px;
 }
+
+.block1 {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section.first {
+  padding-top: 0px;
+}
+
+/* swiper*/
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: rgb(0, 0, 0);
+  opacity: 0.25;
+  transition: all 0.5s ease;
+}
+
+.swiper:hover .swiper-button-next,
+.swiper:hover .swiper-button-prev {
+  opacity: 1;
+  color: rgb(0, 0, 0);
+}
+
+.swiper-pagination-bullets {
+  background: white;
+}
+
+/*second part "why"*/
+
 .section {
   min-height: 100vh;
   padding-top: 64px;
+}
+
+.why {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-left: 70px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+  gap: 30px;
+}
+
+img {
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+}
+.imgaboutme {
+  max-width: 40vh;
+}
+.imghistory {
+  min-width: 30vh;
+  max-width: 100vh;
+}
+.imghistory2 {
+  min-width: 30vh;
+  max-width: 100vh;
+}
+
+/* section portfolio */
+.extra-p {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 20px;
+  text-align: center;
 }
 
 .sectionportfolio {
@@ -170,34 +212,14 @@ img {
   display: flex;
 }
 
-.section.first {
-  padding-top: 0px;
-}
+/* contacts */
 
-a {
-  text-decoration: none;
-  color: white;
-}
-a:hover {
-  background-color: none;
-}
-.content {
+.icons {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  color: rgb(0, 0, 0);
-  opacity: 0.25;
-  transition: all 0.5s ease;
-}
-
-.swiper:hover .swiper-button-next,
-.swiper:hover .swiper-button-prev {
-  opacity: 1;
-  color: rgb(0, 0, 0);
-}
-
-.swiper-pagination-bullets {
-  background: white;
+.content {
+  justify-content: center;
 }
