@@ -30,7 +30,7 @@
       font-weight: 700;
     }
     .navbar {
-        background-color: rgb(255, 144, 144);
+        background-color: rgb(0, 0, 0);
      }
      .aboutme{
         align-items: center;
@@ -90,7 +90,7 @@
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
     .navbar {
-        background-color: rgb(12, 150, 28);
+        background-color: rgb(0, 0, 0);
      }
      h1 {
       color: rgb(0, 0, 0);
@@ -183,7 +183,7 @@
 }
 @media screen and (max-width: 575px){
    .navbar {
-      background-color: rgb(0, 47, 255);
+      background-color: rgb(0, 0, 0);
       margin-left: 1px;
       padding: 2%;
       flex-wrap: nowrap;
