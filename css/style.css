@@ -74,8 +74,6 @@ a:hover {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0.125rem 0 0;
   font-size: 1rem;
   color: #000000;
   text-align: left;
@@ -83,14 +81,21 @@ a:hover {
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0,0,0,.15);
-  border-radius: 0.25rem;}
+}
 .dropdown-menu.show{
 background-color: black;
 padding: 0px;
+
 }
 .dropdown, .dropleft, .dropright, .dropup {
   position: relative;
   display: flex;
+}
+.nav-link:hover{
+  margin-right: 17px;
+}
+.nav-link{
+  margin-right: 17px;
 }
 
  /* body */
